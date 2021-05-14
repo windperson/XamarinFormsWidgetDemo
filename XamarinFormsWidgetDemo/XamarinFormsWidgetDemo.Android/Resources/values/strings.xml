@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="widget_btn_01">Get back App</string>
+  <string name="widget_btn_02">With Shell Routing</string>
+  <string name="widget_text">Widget Init</string>
+</resources>
