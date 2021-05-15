@@ -15,12 +15,11 @@ namespace XamarinFormsWidgetDemo.Droid
             intent.SetAction(AppWidgetManager.ActionAppwidgetUpdate);
             intent.PutExtra("push_data", updated);
             intent.SetAction(DemoClickWidgetProvider.ACTION_WIDGET_RECEIVE_UPDATE);
-            //var pendingIntent = PendingIntent.GetBroadcast(context, 0, intent, 0);
 
             UpdateAppWidget(context, intent);
         }
 
-        static void UpdateAppWidget(Context context, Intent intent)
+        private static void UpdateAppWidget(Context context, Intent intent)
         {
             var widgetManager = AppWidgetManager.GetInstance(context);
             var appWidgetIds = widgetManager.GetAppWidgetIds(new ComponentName(context, Java.Lang.Class.FromType(typeof(DemoClickWidgetProvider))));
